@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  width: 900px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid purple;
+}
+
+.box-one {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.box-two {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
