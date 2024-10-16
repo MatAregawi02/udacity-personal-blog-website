@@ -1,6 +1,14 @@
 html{
     box-sizing: border-box;
-    font-size: 62.5%;
+    // font-size: 62.5%;
+}
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
 }
 *{
     margin : 0;
@@ -8,27 +16,107 @@ html{
     box-sizing: inherit;
 }
 body{
-    width : 900px;
+    background-color: white;
+    width : 750px;
+    margin : 0 auto;
 }
 header{
     display : flex;
-    justify-content: space-around;
-}
-.grid-wrapper{
-    width : 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
-    border : 1px solid purple;
-}
-
-.box-one{
-    border : 1px solid black;
-    margin-bottom: 10px;
+    gap: 230px;
+    // border : 1px solid black;
     width : 100%;
+    height: 100px;
+    margin-bottom: -50px;
+    // background-color: beige;
+}
+.grid-container{
+    // border : 1px solid blue;
+    width : 100%;
+    height: auto;
+    display : grid;
+    grid-template-rows: 50px 180px 35px 180px 35px 180px 50px;
+    grid-template-columns: 50px 300px 25px 350px 50px;
+    margin-bottom: -20px;
+    justify-content: center;
+}
+.box-one{
+    width : 100%;
+    border : 3px solid rgb(180, 175, 175);
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 .box-two{
-    border : 1px solid black;
-    margin-bottom: 10px;
     width : 100%;
+    border : 3px solid rgb(180, 175, 175);
+    grid-column: 4/5;
+    grid-row: 2/3;
+    
+}.box-three{
+    width : 100%;
+    grid-row : 4/5;
+    border : 3px solid rgb(180, 175, 175);
+    grid-column: 2/3;
 }
+.box-four{
+    width : 100%;
+    grid-row: 4/5;
+    border : 3px solid rgb(180, 175, 175);
+    grid-column: 4/5;
+   
+}.box-five{
+    width : 100%;
+    grid-row: 6/7;
+    border : 3px solid rgb(180, 175, 175);
+    grid-column: 2/3;
+    
+}.box-six{
+    width : 100%;
+    border : 3px solid rgb(180, 175, 175);
+     grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+.box{
+    display : flex;
+    flex-direction: column;
+    gap : 10px;
+    justify-content: space-between;
+    padding : 10px;
+
+    a{
+        color : blue;
+    }
+}
+.content{
+    p{
+        margin-bottom: 7px;
+       
+        
+    }
+}
+.green-label{
+    color : rgb(13, 240, 13);
+}
+.blue-label{
+    color : blue;
+}
+
+
+footer{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // border : 1px solid black;
+    width : 100%;
+    height : 90px;
+    padding : 15px;
+    background-color: rgb(246, 245, 245);
+    border-top : 1px solid rgb(182, 181, 181); 
+    a{
+        color : blue;
+    }
+}
+
