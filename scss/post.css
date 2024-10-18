@@ -28,6 +28,12 @@ main {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
 section {
   padding: 0 5rem;
 }
@@ -97,5 +103,9 @@ li {
   margin-bottom: 0;
 }
 .social-box a {
+  color: blue;
+}
+
+.blue-highlight {
   color: blue;
 }/*# sourceMappingURL=post.css.map */
