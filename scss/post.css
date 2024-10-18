@@ -60,10 +60,14 @@ li {
   gap: 1rem;
   list-style: none;
 }
+.post-date li {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .post-date a {
   text-decoration: none;
   border: 1px solid black;
-  border-radius: 45%;
+  border-radius: 15px;
   padding: 0.8rem 1.3rem;
 }
 .post-date a:hover {
@@ -107,5 +111,19 @@ li {
 }
 
 .blue-highlight {
+  color: blue;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 90px;
+  background-color: rgb(246, 245, 245);
+  border-top: 1px solid rgb(182, 181, 181);
+}
+footer a {
   color: blue;
 }/*# sourceMappingURL=post.css.map */

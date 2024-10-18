@@ -56,12 +56,21 @@ li{
     display : flex;
     gap : 1rem;
     list-style: none;
+    li{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
     a{
         text-decoration: none;
         border: 1px solid black;
-        border-radius: 45%;
+        // border-top-left-radius: 50%;
+        // border-bottom-left-radius: 50%;
+        // border-top-right-radius: 50%;
+        // border-bottom-right-radius: 50%;
+        border-radius: 15px;
         padding : .8rem 1.3rem;
-
+        
+      
     }
     a:hover{
         border-color: blue;
@@ -109,4 +118,21 @@ li{
 }
 .blue-highlight{
     color: blue;
+}
+
+footer{
+   
+    // border : 1px solid black;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width : 90%;
+    margin : 0 auto;
+    height : 90px;
+    // padding : 10px;
+    background-color: rgb(246, 245, 245);
+    border-top : 1px solid rgb(182, 181, 181); 
+    a{
+        color : blue;
+    }
 }
