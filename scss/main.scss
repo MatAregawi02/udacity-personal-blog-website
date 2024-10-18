@@ -24,7 +24,7 @@ header{
     display : flex;
     justify-content: center;
     align-items: center;
-    gap: 230px;
+    gap: 260px;
     // border : 1px solid black;
     width : 100%;
     height: 100px;
@@ -41,6 +41,9 @@ header{
     margin-bottom: -20px;
     justify-content: center;
 }
+h1{
+    margin-left: -75px;
+}
 .box-one{
     width : 100%;
     border : 3px solid rgb(180, 175, 175);
@@ -52,6 +55,7 @@ header{
     border : 3px solid rgb(180, 175, 175);
     grid-column: 4/5;
     grid-row: 2/3;
+    
     
 }.box-three{
     width : 100%;
@@ -84,12 +88,13 @@ header{
     gap : 10px;
     justify-content: space-between;
     padding : 10px;
-
+    box-shadow: 5px 5px 5px lightgrey;
     a{
         color : blue;
     }
 }
 .content{
+    //fixme : please enter margin bottom for contents inside the content class
     p{
         margin-bottom: 7px;
        
@@ -120,3 +125,6 @@ footer{
     }
 }
 
+.fa-magnifying-glass{
+    color : red;
+}
