@@ -8,7 +8,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    
+   
     font-size: 1.6rem;
     
 }
@@ -41,7 +41,17 @@ aside{
     padding : 0 3rem;
 }
 h1,h2,p{
+   
     margin-bottom: 2rem;
+}
+figcaption{
+    margin-bottom: 1rem;
+}
+.first-paragraph{
+    margin-top: 1rem;
+}
+.boxed-paragraph{
+    border : 1px solid black;
 }
 .top-list,.bottom-list{
    
@@ -126,7 +136,7 @@ footer{
     display : flex;
     align-items: center;
     justify-content: center;
-    width : 90%;
+    width : 900px;
     margin : 0 auto;
     height : 90px;
     // padding : 10px;

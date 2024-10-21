@@ -46,6 +46,18 @@ h1, h2, p {
   margin-bottom: 2rem;
 }
 
+figcaption {
+  margin-bottom: 1rem;
+}
+
+.first-paragraph {
+  margin-top: 1rem;
+}
+
+.boxed-paragraph {
+  border: 1px solid black;
+}
+
 .top-list, .bottom-list {
   margin-left: 3rem;
   margin-bottom: 2rem;
@@ -118,7 +130,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 900px;
   margin: 0 auto;
   height: 90px;
   background-color: rgb(246, 245, 245);

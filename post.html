@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css-fa/all.css">
-    <link rel="stylesheet" href="scss/post.css">
+    <link rel="stylesheet" href="post-css/post.css">
 </head>
 <body>
     <header>
@@ -17,14 +17,18 @@
         <main>
             <section>
             <h2>Sample blog post</h2>
-            <p>January 1,2014 by <span class="author-name blue-highlight">Mark</span> </p>
-            <img src="images/mountains.webp" alt="blog image">
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur <span class="blue-highlight">adipisicing elit. </span>Corrupti quo quisquam aliquam perferendis tempora adipisci ut molestias, sint fuga. Nihil fugiat excepturi quae iure itaque officiis debitis, recusandae non eos? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse consectetur maiores aliquid, dolores quis alias. Voluptas ut totam laudantium doloribus sequi quos enim, magni est ea odio excepturi rem commodi!</p>
+            <p>January 1,2014 by <span class="author-name blue-highlight"><u>Mark</u></span> </p>
+            <figure>
+                <img src="images/mountains.webp" alt="blog image">
+                <figcaption>Fig - Hiking in the Alps </figcaption>
+            </figure>
             
-            <p class="boxed-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa excepturi veritatis, totam exercitationem voluptas ut inventore recusandae in eaque, nostrum sapiente natus harum quis! Consequatur, natus. Voluptatibus, accusantium non?</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, rerum fugit. Neque ipsum adipisci iste officiis impedit autem perspiciatis! Deserunt vitae eius harum exercitationem vel ullam ab, quas quaerat labore.</p>
+            <hr>
+            <p class="first-paragraph">Lorem ipsum dolor sit amet consectetur <span class="blue-highlight"><u>adipisicing elit. </u></span>Corrupti quo quisquam aliquam perferendis tempora adipisci ut molestias, sint fuga. Nihil fugiat excepturi quae iure itaque officiis debitis, recusandae non eos? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse consectetur maiores aliquid, dolores quis alias. Voluptas ut totam laudantium doloribus sequi quos enim, magni est ea odio excepturi rem commodi!</p>
+            
+            <p class="boxed-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa excepturi veritatis, <b>totam exercitationem voluptas</b> ut inventore recusandae in eaque, nostrum sapiente natus harum quis! Consequatur, natus. Voluptatibus, accusantium non?</p>
+            <p>Using block quotes:</p>
+            <blockquote cite="https://www.wikiwand.com/en/Scooby-Doo_(character)"><p> ipsum dolor sit amet consectetur adipisicing elit. Qui, rerum fugit. Neque ipsum adipisci iste officiis impedit autem perspiciatis! Deserunt vitae eius harum exercitationem vel ullam ab, quas quaerat labore.</p></blockquote> 
 
             <h1>Heading</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea velit esse asperiores nesciunt libero praesentium consequatur saepe earum. Voluptatibus, expedita facilis consequuntur earum eaque aut neque architecto veniam provident ullam?</p>
@@ -54,16 +58,17 @@
             <ul class="post-date">
                 <li><a class="blue-highlight" href="">Older Post</a></li>
                 <li><a href="">Newer Post</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
             </section>
 
             <aside>
                 <div class="about-box">
-                    <h2>About</h2>
+                    <h2><em>About</em></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur provident possimus obcaecati ipsa.?</p>
                 </div>
                 <div class="archives-box">
-                    <h2>Archives</h2>
+                    <h2><em>Archives</em></h2>
                     <ul>
                        <li><a href="">March 2014</a></li> 
                        <li><a href="">February 2014</a></li> 
@@ -86,7 +91,7 @@
 
                 <div class="social-box">
                     <ul>
-                        <h2>Elsewhere</h2>
+                        <h2><em>Elsewhere</em></h2>
                         <li><a href="">GitHub</a></li>
                         <li><a href="">Twitter</a></li>
                         <li><a href="">Facebook</a></li>
