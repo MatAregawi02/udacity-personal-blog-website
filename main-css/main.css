@@ -20,7 +20,7 @@ html {
 
 body {
   background-color: white;
-  width: 750px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 260px;
-  width: 100%;
+  max-width: 100%;
   height: 100px;
   margin-bottom: -50px;
 }
@@ -152,4 +152,55 @@ footer {
 }
 footer a {
   color: blue;
+}
+footer .no-display {
+  display: none;
+}
+
+@media screen and (max-width: 705px) {
+  header {
+    max-width: 60%;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-around;
+  }
+  header span a {
+    display: none;
+  }
+  .grid-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50px 180px 35px 180px 35px 180px 50px 180px 35px 180px 50px 180px 35px;
+    margin-bottom: -20px;
+    justify-content: center;
+  }
+  .box-one {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .box-two {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  .box-three {
+    grid-row: 6/7;
+    grid-column: 2/3;
+  }
+  .box-four {
+    grid-row: 8/9;
+    grid-column: 2/3;
+  }
+  .box-five {
+    grid-row: 10/11;
+    grid-column: 2/3;
+  }
+  .box-six {
+    grid-row: 12/13;
+    grid-column: 2/3;
+  }
+  footer .no-display {
+    display: flex;
+  }
 }
