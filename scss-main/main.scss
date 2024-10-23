@@ -1,168 +1,171 @@
-
+@use 'base';
+@use 'layout';
+@use 'abstracts';
 //base start
-html{
-    box-sizing: border-box;
-    // font-size: 62.5%;
-}
-*{
-    margin : 0;
-    padding : 0;
-    box-sizing: inherit;
-}
-html{
-    box-sizing: border-box;
-}
-*{
-    margin : 0;
-    padding : 0;
-    box-sizing: inherit;
-}
-body{
-    background-color: white;
-    max-width : 750px;
-    margin : 0 auto;
-}
+
+// html{
+//     box-sizing: border-box;
+//     // font-size: 62.5%;
+// }
+// *{
+//     margin : 0;
+//     padding : 0;
+//     box-sizing: inherit;
+// }
+// html{
+//     box-sizing: border-box;
+// }
+// *{
+//     margin : 0;
+//     padding : 0;
+//     box-sizing: inherit;
+// }
+// body{
+//     background-color: white;
+//     max-width : 750px;
+//     margin : 0 auto;
+// }
 //base end
 
 //layout start
-header{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    gap: 260px;
-    // border : 1px solid black;
-    max-width : 100%;
-    height: 100px;
-    margin-bottom: -50px;
-    // background-color: beige;
+// header{
+//     display : flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 260px;
+//     // border : 1px solid black;
+//     max-width : 100%;
+//     height: 100px;
+//     margin-bottom: -50px;
+//     // background-color: beige;
     
-}
-.grid-container{
-    // border : 1px solid blue;
-    width : 100%;
-    height: auto;
-    display : grid;
-    grid-template-rows: 50px 180px 35px 180px 35px 180px 50px;
-    grid-template-columns: 50px 300px 25px 350px 50px;
-    margin-bottom: -20px;
-    justify-content: center;
-}
-h1{
-    margin-left: -75px;
-}
-.box-one{
-    width : 100%;
+// }
+// .grid-container{
+//     // border : 1px solid blue;
+//     width : 100%;
+//     height: auto;
+//     display : grid;
+//     grid-template-rows: 50px 180px 35px 180px 35px 180px 50px;
+//     grid-template-columns: 50px 300px 25px 350px 50px;
+//     margin-bottom: -20px;
+//     justify-content: center;
+// }
+// h1{
+//     margin-left: -75px;
+// }
+// .box-one{
+//     width : 100%;
    
-    background-image: url("/images/reading.jpg");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    border : 3px solid rgb(180, 175, 175);
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.box-two{
-    width : 100%;
-    background-image: url("/images/coffee.jpg");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    border : 3px solid rgb(180, 175, 175);
-    grid-column: 4/5;
-    grid-row: 2/3;
+//     background-image: url("/images/reading.jpg");
+//     background-repeat: none;
+//     background-position: center;
+//     background-size: cover;
+//     border : 3px solid rgb(180, 175, 175);
+//     grid-column: 2/3;
+//     grid-row: 2/3;
+// }
+// .box-two{
+//     width : 100%;
+//     background-image: url("/images/coffee.jpg");
+//     background-repeat: none;
+//     background-position: center;
+//     background-size: cover;
+//     border : 3px solid rgb(180, 175, 175);
+//     grid-column: 4/5;
+//     grid-row: 2/3;
     
     
-}.box-three{
-    width : 100%;
-    background-image: url("/images/study.jpg");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    grid-row : 4/5;
-    border : 3px solid rgb(180, 175, 175);
-    grid-column: 2/3;
-}
-.box-four{
-    width : 100%;
-    background-image: url("/images/mountains.webp");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    grid-row: 4/5;
-    border : 3px solid rgb(180, 175, 175);
-    grid-column: 4/5;
+// }.box-three{
+//     width : 100%;
+//     background-image: url("/images/study.jpg");
+//     background-repeat: none;
+//     background-position: center;
+//     background-size: cover;
+//     grid-row : 4/5;
+//     border : 3px solid rgb(180, 175, 175);
+//     grid-column: 2/3;
+// }
+// .box-four{
+//     width : 100%;
+//     background-image: url("/images/mountains.webp");
+//     background-repeat: none;
+//     background-position: center;
+//     background-size: cover;
+//     grid-row: 4/5;
+//     border : 3px solid rgb(180, 175, 175);
+//     grid-column: 4/5;
    
-}.box-five{
-    width : 100%;
-    background-image: url("/images/meditation.jpg");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    grid-row: 6/7;
-    border : 3px solid rgb(180, 175, 175);
-    grid-column: 2/3;
+// }.box-five{
+//     width : 100%;
+//     background-image: url("/images/meditation.jpg");
+//     background-repeat: none;
+//     background-position: center;
+//     background-size: cover;
+//     grid-row: 6/7;
+//     border : 3px solid rgb(180, 175, 175);
+//     grid-column: 2/3;
     
-}.box-six{
-    width : 100%;
-    // background: rgba(29, 28, 28, 0.5);
-    background-image: url("/images/music.jpg");
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    border : 3px solid rgb(180, 175, 175);
-     grid-column: 4/5;
-    grid-row: 6/7;
-}
+// }.box-six{
+//     width : 100%;
+//     // background: rgba(29, 28, 28, 0.5);
+//     background-image: url("/images/music.jpg");
+//     background-repeat: none;
+//     background-position: center;
+//     background-size: cover;
+//     border : 3px solid rgb(180, 175, 175);
+//      grid-column: 4/5;
+//     grid-row: 6/7;
+// }
 
-.box{
-    display : flex;
-    flex-direction: column;
-    gap : 10px;
-    justify-content: space-between;
-    padding : 10px;
-    box-shadow: 5px 5px 5px lightgrey;
+// .box{
+//     display : flex;
+//     flex-direction: column;
+//     gap : 10px;
+//     justify-content: space-between;
+//     padding : 10px;
+//     box-shadow: 5px 5px 5px lightgrey;
    
-    a{
-        color : rgb(160, 160, 245);
-    }
+//     a{
+//         color : rgb(160, 160, 245);
+//     }
        
-        color : white;
+//         color : white;
     
-}
-.content{
-    //fixme : please enter margin bottom for contents inside the content class
-    p{
-        margin-bottom: 7px;
+// }
+// .content{
+//     //fixme : please enter margin bottom for contents inside the content class
+//     p{
+//         margin-bottom: 7px;
        
         
-    }
-}
-.green-label{
-    color : rgb(13, 240, 13);
-}
-.blue-label{
-    color : blue;
-}
+//     }
+// }
+// .green-label{
+//     color : rgb(13, 240, 13);
+// }
+// .blue-label{
+//     color : blue;
+// }
 
 
-footer{
-    display : flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    // border : 1px solid black;
-    width : 100%;
-    height : 90px;
-    padding : 15px;
-    background-color: rgb(246, 245, 245);
-    border-top : 1px solid rgb(182, 181, 181); 
-    a{
-        color : blue;
-    }
-    .no-display{
-        display : none;
-    }
-}
+// footer{
+//     display : flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     align-items: center;
+//     // border : 1px solid black;
+//     width : 100%;
+//     height : 90px;
+//     padding : 15px;
+//     background-color: rgb(246, 245, 245);
+//     border-top : 1px solid rgb(182, 181, 181); 
+//     a{
+//         color : blue;
+//     }
+//     .no-display{
+//         display : none;
+//     }
+// }
 
 
 // .fa-magnifying-glass{
@@ -171,24 +174,24 @@ footer{
 
 //responsive design
 
-@media screen and (max-width : 705px) {
-    // body{
-    //     background-color: yellow;
-    // }
-    header
+// @media screen and (max-width : 705px) {
+//     // body{
+//     //     background-color: yellow;
+//     // }
+//     header
 
-    {
-        span{
-            a{
-                display : none;
-            }
-        }
-        // display : block;
-        max-width : 60%;
-        margin : 0 auto;
-        gap : 0;
+//     {
+//         span{
+//             a{
+//                 display : none;
+//             }
+//         }
+//         // display : block;
+//         max-width : 60%;
+//         margin : 0 auto;
+//         gap : 0;
         
-        justify-content: space-around;
+//         justify-content: space-around;
        
         
        
@@ -197,47 +200,47 @@ footer{
     
        
         
-    }
+//     }
     
-    .grid-container{
-        // border : 1px solid blue;
-        width : 100%;
-        height: auto;
-        display : grid;
-        grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 50px 180px 35px 180px 35px 180px 50px 180px 35px 180px 50px 180px 35px;
-        margin-bottom: -20px;
-        justify-content: center;
-    }
+//     .grid-container{
+//         // border : 1px solid blue;
+//         width : 100%;
+//         height: auto;
+//         display : grid;
+//         grid-template-columns: 20% 60% 20%;
+//         grid-template-rows: 50px 180px 35px 180px 35px 180px 50px 180px 35px 180px 50px 180px 35px;
+//         margin-bottom: -20px;
+//         justify-content: center;
+//     }
    
-    .box-one{
-        grid-row: 2/3;
-        grid-column: 2/3;
-    }
-    .box-two{
-        grid-row: 4/5;
-        grid-column: 2/3;
-    }
-    .box-three{
-        grid-row: 6/7 ;
-        grid-column: 2/3;
-    }
-    .box-four{
-        grid-row: 8/9;
-        grid-column: 2/3;
-    }
-    .box-five{
-        grid-row: 10/11;
-        grid-column: 2/3;
-    }
-    .box-six{
-        grid-row: 12/13;
-        grid-column: 2/3;
-    }
+//     .box-one{
+//         grid-row: 2/3;
+//         grid-column: 2/3;
+//     }
+//     .box-two{
+//         grid-row: 4/5;
+//         grid-column: 2/3;
+//     }
+//     .box-three{
+//         grid-row: 6/7 ;
+//         grid-column: 2/3;
+//     }
+//     .box-four{
+//         grid-row: 8/9;
+//         grid-column: 2/3;
+//     }
+//     .box-five{
+//         grid-row: 10/11;
+//         grid-column: 2/3;
+//     }
+//     .box-six{
+//         grid-row: 12/13;
+//         grid-column: 2/3;
+//     }
 
-    footer{
-        .no-display{
-            display : flex; //when responsive, subscribe button shows up on the footer
-        }
-    }
-}
+//     footer{
+//         .no-display{
+//             display : flex; //when responsive, subscribe button shows up on the footer
+//         }
+//     }
+// }

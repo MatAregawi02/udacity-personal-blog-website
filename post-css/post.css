@@ -11,31 +11,12 @@ html {
 
 body {
   font-size: 1.6rem;
-}
-
-header {
-  width: 800px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
-main {
-  width: 900px;
-  display: grid;
-  grid-template-columns: 70% 30%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-img {
-  width: 100%;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-}
-
-section {
-  padding: 0 5rem;
+.blue-highlight {
+  color: blue;
 }
 
 aside {
@@ -58,6 +39,30 @@ figcaption {
   border: 1px solid black;
 }
 
+header {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 5.7rem;
+}
+
+main {
+  width: 850px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0 auto;
+}
+main img {
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+main section {
+  padding: 0 5rem;
+}
+
 .top-list, .bottom-list {
   margin-left: 3rem;
   margin-bottom: 2rem;
@@ -65,26 +70,6 @@ figcaption {
 
 li {
   margin-bottom: 1rem;
-}
-
-.post-date {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-.post-date li {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.post-date a {
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 0.8rem 1.3rem;
-}
-.post-date a:hover {
-  border-color: blue;
-  color: blue;
 }
 
 .about-box {
@@ -122,20 +107,64 @@ li {
   color: blue;
 }
 
-.blue-highlight {
-  color: blue;
+.no-initial-display {
+  display: none;
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   height: 90px;
+  margin-left: 5.7rem;
   background-color: rgb(246, 245, 245);
   border-top: 1px solid rgb(182, 181, 181);
 }
 footer a {
   color: blue;
+}
+
+.post-date {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.post-date li {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.post-date a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.8rem 1.3rem;
+}
+.post-date a:hover {
+  border-color: blue;
+  color: blue;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    justify-content: flex-start;
+    gap: 20%;
+  }
+  footer {
+    height: auto;
+    display: block;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer .no-initial-display {
+    display: inline-block;
+  }
+  .no-initial-display {
+    display: block;
+  }
+  .no-display-after {
+    display: none;
+  }
 }

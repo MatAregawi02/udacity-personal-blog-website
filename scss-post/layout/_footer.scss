@@ -1,0 +1,17 @@
+footer{
+   
+    // border : 1px solid black;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    max-width : 800px;
+    margin : 0 auto;
+    height : 90px;
+    // padding : 10px;
+    margin-left: 5.7rem;
+    background-color: rgb(246, 245, 245);
+    border-top : 1px solid rgb(182, 181, 181); 
+    a{
+        color : blue;
+    }
+}

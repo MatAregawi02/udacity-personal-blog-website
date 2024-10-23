@@ -1,0 +1,26 @@
+.post-date{
+   
+    display : flex;
+    gap : 1rem;
+    list-style: none;
+    li{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    a{
+        text-decoration: none;
+        border: 1px solid black;
+        // border-top-left-radius: 50%;
+        // border-bottom-left-radius: 50%;
+        // border-top-right-radius: 50%;
+        // border-bottom-right-radius: 50%;
+        border-radius: 15px;
+        padding : .8rem 1.3rem;
+        
+      
+    }
+    a:hover{
+        border-color: blue;
+        color : blue;
+    }
+}

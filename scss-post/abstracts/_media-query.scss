@@ -1,0 +1,29 @@
+@media screen and (max-width : 900px) {
+   
+    header{
+        justify-content: flex-start;
+        gap : 20%;
+    }
+    // main,header,footer{
+    //     padding-right: 2rem;
+    // }
+    footer{
+         
+         
+        p{
+            text-align: center;
+        }
+        
+        height : auto;
+        display : block;
+        .no-initial-display{
+            display : inline-block;
+        }
+    }
+    .no-initial-display{
+        display : block;
+    }
+    .no-display-after{
+        display : none;
+    }
+}
