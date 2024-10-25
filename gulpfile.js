@@ -1,3 +1,5 @@
+//adapted from chatGPT for preprocessing purposes
+
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
