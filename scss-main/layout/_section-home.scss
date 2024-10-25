@@ -1,11 +1,13 @@
 .grid-container{
     // border : 1px solid blue;
-    width : 100%;
+    max-width : 710px;
     height: auto;
     display : grid;
-    grid-template-rows: 50px 180px 35px 180px 35px 180px 50px;
+    
+    grid-template-rows: 10px 180px 35px 180px 35px 180px 50px;
     grid-template-columns: 50px 300px 25px 350px 50px;
     margin-bottom: -20px;
+    margin: 0 auto;
     justify-content: center;
 }
 .box{
@@ -15,9 +17,9 @@
     justify-content: space-between;
     padding : 10px;
     box-shadow: 5px 5px 5px lightgrey;
-   
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6));
     a{
-        color : rgb(160, 160, 245);
+        color : rgb(234, 234, 242);
     }
        
         color : white;
@@ -29,7 +31,7 @@ h1{
 .box-one{
     width : 100%;
    
-    background-image: url("/images/reading.jpg");
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("/images/reading.jpg");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -39,7 +41,7 @@ h1{
 }
 .box-two{
     width : 100%;
-    background-image: url("/images/coffee.jpg");
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url("/images/coffee.jpg");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -50,7 +52,7 @@ h1{
     
 }.box-three{
     width : 100%;
-    background-image: url("/images/study.jpg");
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("/images/study.jpg");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -60,7 +62,7 @@ h1{
 }
 .box-four{
     width : 100%;
-    background-image: url("/images/mountains.webp");
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("/images/mountains.webp");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -70,7 +72,7 @@ h1{
    
 }.box-five{
     width : 100%;
-    background-image: url("/images/meditation.jpg");
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("/images/meditation.jpg");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -81,7 +83,7 @@ h1{
 }.box-six{
     width : 100%;
     // background: rgba(29, 28, 28, 0.5);
-    background-image: url("/images/music.jpg");
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("/images/music.jpg");
     background-repeat: none;
     background-position: center;
     background-size: cover;

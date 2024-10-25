@@ -7,17 +7,13 @@ function compileSass1() {
         .pipe(gulp.dest('main-css'));
 }
 
-function compileSass2() {
-    return gulp.src('scss-post/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('post-css'));
-}
+
 
 
 function watchFiles() {
-    gulp.watch('scss-main/*.scss', compileSass1);
-    gulp.watch('scss-post/*.scss', compileSass2);
+    gulp.watch('scss-main/**/*.scss', compileSass1);
+   
 }
 
-exports.default = gulp.series(gulp.parallel(compileSass1, compileSass2), watchFiles);
+exports.default = gulp.series(compileSass1, watchFiles);
 //dart-sass must be used next time

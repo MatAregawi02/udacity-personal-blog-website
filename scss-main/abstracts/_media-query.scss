@@ -1,40 +1,55 @@
-@media screen and (max-width : 705px) {
-    // body{
-    //     background-color: yellow;
-    // }
-    header
-
-    {
-        span{
-            a{
-                display : none;
-            }
-        }
-        // display : block;
-        max-width : 60%;
-        margin : 0 auto;
-        gap : 0;
-        
-        justify-content: space-around;
-       
-        
-       
-        
-           
+@media screen and (max-width : 700px) {
     
-       
+    .primary-header
+    
+    {
+        max-width : 80%;
+      
+            
+            h1{
+                font-size: 2rem;
+                margin-left: -10px;
+                
+            }
+          
+            
+            
+        }      
         
-    }
+               
+              
+                
+//     //             justify-content: space-between;
+               
+//     //             // border : 1px solid black;
+//     //             max-width : 100%;
+//     //             margin : 0 auto;
+//     //             height: 100px;
+//     //             margin-bottom: 10px;
+//     //             padding : 2rem;
+//     //             // background-color: beige;
+
+//     //             // .fa-magnifying-glass{
+//     //             //     justify-self: flex-end;
+//     //             // }
+                
+
+
     
     .grid-container{
         // border : 1px solid blue;
-        width : 100%;
+        
         height: auto;
         display : grid;
-        grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 50px 180px 35px 180px 35px 180px 50px 180px 35px 180px 50px 180px 35px;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 10px 200px 35px 200px 35px 200px 50px 200px 35px 200px 50px 200px 35px;
+      
         margin-bottom: -20px;
         justify-content: center;
+        margin : auto;
+    }
+    .box{
+        font-size: 2rem;
     }
    
     .box-one{
@@ -63,8 +78,45 @@
     }
 
     footer{
-        .no-display{
-            display : flex; //when responsive, subscribe button shows up on the footer
+        // .no-display{
+        //     display : flex; //when responsive, subscribe button shows up on the footer
+        // }
+        
+          // align-items: center;
+          justify-content: space-around;
+          padding : 2rem;
+        //   border : 1px solid black;
+          max-width : 100%;
+          margin : 0 auto;
+          height: auto;
+          margin-bottom: 10px;
+          // background-color: beige;
+          font-size: 2rem;
+    }
+}
+
+@media screen and (max-width : 672px){
+   
+    
+    .grid-container{
+        // border : 1px solid blue;
+        max-width : 100%;
+        height: auto;
+        display : grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 10px 250px 35px 250px 35px 250px 50px 250px 35px 250px 50px 250px 35px;
+      
+        margin-bottom: -20px;
+        justify-content: center;
+        margin : 0 auto;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .primary-header{
+        a{
+            display :none;
         }
+       
     }
 }

@@ -1,12 +1,43 @@
-header{
+.primary-header{
     display : flex;
-    justify-content: center;
+    padding : 2rem;
     align-items: center;
-    gap: 260px;
-    // border : 1px solid black;
-    max-width : 100%;
+    justify-content: space-between;
+ 
+    max-width : 710px;
+    margin : 0 auto;
     height: 100px;
-    margin-bottom: -50px;
+    margin-bottom: 10px;
+    // background-color: beige;
+    .flex-aligner{
+        padding : 0 0 15px 0;
+        // border : 1px solid black;
+    }
+   
+   
+}
+.primary-header-post{
+    display : flex;
+    padding : 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+ 
+    max-width : 710px;
+    // margin : 0 auto;
+    height: 100px;
+    margin-bottom: 10px;
     // background-color: beige;
     
-}
+}//repeated for the purpose of responsive design
+
+// header{
+//     width : 95%;
+//     display : flex;
+//     margin : 0 auto;
+//     justify-content: space-between;
+//     margin-top: 2rem;
+//     margin-left: 5.7rem;
+//     // gap : 120px;
+//     // border : 1px solid black;
+
+// }

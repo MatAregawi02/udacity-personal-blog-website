@@ -1,0 +1,139 @@
+// // .no-display-after{
+// //     display : inline;
+// // }
+
+// @media screen and (max-width : 710px) {
+   
+//     header{
+//         justify-content: flex-start;
+//         gap : 20%;
+//     }
+//     // main,header,footer{
+//     //     padding-right: 2rem;
+//     // }
+//     footer{
+         
+         
+//         p{
+//             text-align: center;
+//         }
+        
+//         height : auto;
+//         display : block;
+//         .no-initial-display{
+//             display : inline-block;
+//         }
+//     }
+//     .no-initial-display{
+//         display : block;
+//     }
+//     .no-display-after{
+//         display : none;
+//     }
+// }
+
+@media screen and (max-width : 636px ){
+    .primary-header-post{
+        
+            display : flex;
+           
+            // padding : 2rem;
+            align-items: baseline;
+            justify-content: space-between;
+            padding : 2rem;
+            max-width : 100%;
+            margin : 0 5rem;
+            // margin : 0 auto;
+            height: 100px;
+            margin-bottom: 10px;
+            // background-color: beige;
+            h1{
+                font-size: 2rem;
+                margin-left: -20px;
+            }
+
+           
+                // .no-display-after{
+                //     display : none;
+                // }
+            
+            
+        
+    }
+    aside{
+        .no-display-after{
+            display : none;
+        }
+        
+       
+    }
+    footer{
+        h2{
+            display : none;
+        }
+        // .no-initial-display{
+        //     display : inline-block; //inserted subsribe button in the footer
+        // }
+        .icon-flex{
+            ul{
+            display : flex;
+            margin-top: 3rem;
+            gap : 1rem;
+          
+            .fa-github,.fa-facebook,.fa-square-twitter{
+                font-size: 3rem;
+            }
+            
+            }
+            
+        }
+    }
+    main{
+        display : block; //grid must be removed
+        .no-initial-display{
+            display: inline-block;//when responsive, we will have display
+        }
+        
+    }
+
+    
+    .post-date{
+   
+        display : flex;
+        flex-direction: column;
+        gap : 0;
+        list-style: none;
+        li{
+            margin-top: .2rem;
+            margin-bottom: 2rem;
+        }
+        a{
+            text-decoration: none;
+            border: 1px solid black;
+            // border-top-left-radius: 50%;
+            // border-bottom-left-radius: 50%;
+            // border-top-right-radius: 50%;
+            // border-bottom-right-radius: 50%;
+            border-radius: 15px;
+            padding : .8rem 1.3rem;
+            
+          
+        }
+        a:hover{
+            border-color: blue;
+            color : blue;
+        }
+    }
+}
+@media screen and (max-width : 400px){
+    .primary-header-post{
+        .no-display-after{
+            display : none;
+        }
+    }
+    footer{
+         .no-initial-display{
+            display : inline-block; //inserted subsribe button in the footer
+        }
+    }
+}

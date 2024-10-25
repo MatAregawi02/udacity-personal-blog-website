@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css-fa/all.css">
-    <link rel="stylesheet" href="post-css/post.css">
+    <link rel="stylesheet" href="main-css/main.css">
 </head>
 <body>
-    <header>
-        <span><u>subscribe</u></span>
+    <div class = "primary-header-post">
+        <a class="no-display-after" href="">subscribe</a>
         <h1><u>Blog Title</u></h1>
         <span><i class="fa-solid fa-magnifying-glass"></i></span>
-    </header>
+    </div>
    
         <main>
-            <section>
+            <section  class="blog-post-content">
             <h2>Sample blog post</h2>
             <p>January 1,2014 by <span class="author-name blue-highlight"><u>Mark</u></span> </p>
             <div class="about-box no-initial-display">
@@ -24,7 +24,7 @@
             </div>
             <figure>
                 <img src="images/mountains.webp" alt="blog image">
-                <figcaption>Fig - Hiking in the Alps </figcaption>
+                <figcaption>Fig - Hiking in the Alps </figcaption> <!--figcapiton added-->
             </figure>
             
             <hr>
@@ -34,7 +34,7 @@
             <p>Using block quotes:</p>
             <blockquote cite="https://www.wikiwand.com/en/Scooby-Doo_(character)"><p> ipsum dolor sit amet consectetur adipisicing elit. Qui, rerum fugit. Neque ipsum adipisci iste officiis impedit autem perspiciatis! Deserunt vitae eius harum exercitationem vel ullam ab, quas quaerat labore.</p></blockquote> 
 
-            <h1>Heading</h1>
+            <h2>Heading</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea velit esse asperiores nesciunt libero praesentium consequatur saepe earum. Voluptatibus, expedita facilis consequuntur earum eaque aut neque architecto veniam provident ullam?</p>
 
             <h2>Sub-heading</h2>
@@ -127,12 +127,13 @@
         </main>
         <footer>
             <p>Blog template built for <a href="">Bootstrap</a></p>
-            <div class="social-box no-initial-display">
+            <a class="subscribe-btn no-initial-display" href="">subscribe</a>
+            <div class="social-box no-initial-display icon-flex">
                 <ul>
                     <h2><em>Elsewhere</em></h2>
-                    <li><a href="">GitHub</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Facebook</a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
                 </ul>
             </div>
         </footer>
