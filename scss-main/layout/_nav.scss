@@ -1,0 +1,15 @@
+nav{
+    background-color: lightgreen;
+    max-width : 710px;
+    margin : 0 auto;
+    padding : .5rem 2rem;
+    ul{
+        display : flex;
+        list-style: none;
+        justify-content: flex-start;
+        gap : 3rem;
+    }
+    // li{
+    //     border-right: 1px solid black;
+    // }
+}

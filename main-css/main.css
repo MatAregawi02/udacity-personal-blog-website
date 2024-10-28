@@ -54,6 +54,19 @@ figcaption {
   border: 1px solid black;
 }
 
+nav {
+  background-color: lightgreen;
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
 .grid-container {
   max-width: 710px;
   height: auto;
@@ -225,6 +238,18 @@ li {
   .primary-header h1 {
     font-size: 2rem;
     margin-left: -10px;
+  }
+  nav {
+    background-color: lightgreen;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    gap: 3rem;
   }
   .grid-container {
     height: auto;
