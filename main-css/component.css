@@ -1,0 +1,48 @@
+.post-date {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.post-date li {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.post-date a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.8rem 1.3rem;
+}
+.post-date a:hover {
+  border-color: blue;
+  color: blue;
+}
+
+.box {
+  position: relative;
+}
+.box .btn-link-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 1rem;
+}
+.box .purchase-btn {
+  padding: 1rem;
+  width: 5rem;
+  display: inline;
+  position: absolute;
+  background-color: grey;
+  top: 0;
+  right: 0;
+}
+.box .purchase-btn:hover {
+  background-color: green;
+}
+
+.to-home-link { /*link to home page*/
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1rem 0 0 4.3rem;
+  padding: 1rem;
+}

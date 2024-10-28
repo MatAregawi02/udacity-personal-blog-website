@@ -24,3 +24,32 @@
         color : blue;
     }
 }
+
+.box{
+    position : relative;
+    .btn-link-flex{
+        display : flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap : 1rem;
+    }
+    .purchase-btn{ //use w3school as a resource for buttons
+        padding : 1rem;
+        width : 5rem;
+        display : inline;
+        position : absolute;
+        background-color: grey;
+        top : 0;
+        right : 0;
+        &:hover{
+            background-color: green;
+        }
+    }
+}
+.to-home-link{ /*link to home page*/
+    display : inline-block;
+    // background-color: yellow;
+    border : 1px solid black;
+    margin : 1rem 0 0 4.3rem;
+    padding : 1rem;
+}

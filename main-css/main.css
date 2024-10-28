@@ -1,3 +1,6 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(component.css);
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -51,30 +54,6 @@ figcaption {
   border: 1px solid black;
 }
 
-.primary-header {
-  display: flex;
-  padding: 2rem;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 710px;
-  margin: 0 auto;
-  height: 100px;
-  margin-bottom: 10px;
-}
-.primary-header .flex-aligner {
-  padding: 0 0 15px 0;
-}
-
-.primary-header-post {
-  display: flex;
-  padding: 4.5rem;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 710px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
 .grid-container {
   max-width: 710px;
   height: auto;
@@ -98,6 +77,11 @@ figcaption {
 }
 .box a {
   color: rgb(234, 234, 242);
+}
+.box .card-img {
+  width: 50px;
+  position: absolute;
+  right: 0;
 }
 
 h1 {
@@ -175,11 +159,6 @@ main {
   display: grid;
   grid-template-columns: 70% 30%;
 }
-main img {
-  max-width: 100%;
-  border-radius: 20px;
-  margin-bottom: 1rem;
-}
 main section {
   padding: 0 5rem;
 }
@@ -190,6 +169,12 @@ main section {
 }
 
 li {
+  margin-bottom: 1rem;
+}
+
+.post-img {
+  max-width: 100%;
+  border-radius: 20px;
   margin-bottom: 1rem;
 }
 
@@ -231,46 +216,6 @@ li {
 
 .no-initial-display {
   display: none;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 710px;
-  margin: 0 auto;
-  height: auto;
-  padding: 15px;
-  gap: 2rem;
-  background-color: rgb(246, 245, 245);
-  border-top: 1px solid rgb(182, 181, 181);
-}
-footer a {
-  color: blue;
-}
-footer .no-initial-display {
-  display: none;
-}
-
-.post-date {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-.post-date li {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.post-date a {
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 0.8rem 1.3rem;
-}
-.post-date a:hover {
-  border-color: blue;
-  color: blue;
 }
 
 @media screen and (max-width: 700px) {
@@ -326,6 +271,9 @@ footer .no-initial-display {
     margin-bottom: 10px;
     font-size: 2rem;
   }
+  footer .no-initial-display-home {
+    display: none;
+  }
 }
 @media screen and (max-width: 672px) {
   .grid-container {
@@ -342,6 +290,9 @@ footer .no-initial-display {
 @media screen and (max-width: 400px) {
   .primary-header a {
     display: none;
+  }
+  footer .no-initial-display-home {
+    display: inline-block;
   }
 }
 @media screen and (max-width: 636px) {
@@ -365,9 +316,12 @@ footer .no-initial-display {
   footer h2 {
     display: none;
   }
+  footer .no-initial-display-post {
+    display: inline-block;
+  }
   footer .icon-flex ul {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     gap: 1rem;
   }
   footer .icon-flex ul .fa-github, footer .icon-flex ul .fa-facebook, footer .icon-flex ul .fa-square-twitter {

@@ -7,7 +7,9 @@ function compileSass1() {
     return gulp.src('scss-main/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('main-css'));
+        
 }
+
 
 
 

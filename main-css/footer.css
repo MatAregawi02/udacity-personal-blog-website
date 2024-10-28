@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 710px;
+  margin: 0 auto;
+  height: auto;
+  padding: 15px;
+  gap: 2rem;
+  background-color: rgb(246, 245, 245);
+  border-top: 1px solid rgb(182, 181, 181);
+}
+footer a {
+  color: blue;
+}
+footer .no-initial-display-home {
+  display: none;
+}
+footer .no-initial-display-post {
+  display: none;
+}

@@ -74,10 +74,15 @@
         // .no-initial-display{
         //     display : inline-block; //inserted subsribe button in the footer
         // }
+      
+            .no-initial-display-post{
+               display : inline-block; //inserted subsribe button in the footer
+           }
+       
         .icon-flex{
             ul{
             display : flex;
-            margin-top: 3rem;
+            margin-top: 2rem;
             gap : 1rem;
           
             .fa-github,.fa-facebook,.fa-square-twitter{

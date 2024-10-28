@@ -1,7 +1,11 @@
 @use 'base';
 @use 'layout';
-@use 'components';
+// @use 'components';
 @use 'abstracts';
+@import url(header.css);
+@import url(footer.css);
+@import url(component.css);
+
 //base start
 
 // html{

@@ -1,0 +1,23 @@
+.primary-header {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 710px;
+  margin: 0 auto;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.primary-header .flex-aligner {
+  padding: 0 0 15px 0;
+}
+
+.primary-header-post {
+  display: flex;
+  padding: 4.5rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 710px;
+  height: 100px;
+  margin-bottom: 10px;
+}

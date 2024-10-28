@@ -81,6 +81,9 @@
         // .no-display{
         //     display : flex; //when responsive, subscribe button shows up on the footer
         // }
+        .no-initial-display-home{
+            display : none;
+        }
         
           // align-items: center;
           justify-content: space-around;
@@ -119,4 +122,10 @@
         }
        
     }
+    footer{
+    .no-initial-display-home{
+        display : inline-block;
+    }
+}
+    
 }
